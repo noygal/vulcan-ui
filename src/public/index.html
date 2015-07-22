@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="A front-end list of gulps">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Playgound</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+
+
+
+      <link rel="stylesheet" href="lib/material/material.min.css">
+      <link rel="stylesheet" href="lib/material/styles.css">
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+       
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      
+          <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+      <div id="mainSpinner" class="mdl-spinner mdl-js-spinner is-active" style="position:absolute;right:20px;top:10px;display:none"></div>
+     
+              <!--<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+              </div>-->
+              <div class="mdl-  layout__header-row">
+                  <h3>Build Viewer</h3>
+
+              
+              </div>
+              <!--<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+              </div>-->
+              <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+                  <!--<a href="#proj1" class="mdl-layout__tab is-active">Proj1</a>
+                  <a href="#proj2" class="mdl-layout__tab">Proj2</a>-->
+                  <button  onclick="openDirectory()" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+                      <i class="material-icons">add</i>
+                  </button>
+              </div>
+          </header>
+
+          <main class="mdl-layout__content">
+              <div class="mdl-layout__tab-panel is-active" id="proj1">
+
+              </div>
+              <!--<div class="mdl-layout__tab-panel" id="proj2">
+                  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                      <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                          <i class="material-icons">play_circle_filled</i>
+                      </header>
+                      <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                          <div class="mdl-card__supporting-text">
+                              <h4>Proj2</h4>
+                              Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
+                          </div>
+                          <div class="mdl-card__actions">
+                              <a href="#" class="mdl-button">Read our features</a>
+                          </div>
+                      </div>
+                      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
+                          <i class="material-icons">more_vert</i>
+                      </button>
+                      <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
+                          <li class="mdl-menu__item">Lorem</li>
+                          <li class="mdl-menu__item" disabled>Ipsum</li>
+                          <li class="mdl-menu__item">Dolor</li>
+                      </ul>
+                  </section>
+              </div>-->
+              <footer class="mdl-mega-footer">
+                  <div class="mdl-mega-footer--middle-section">
+                      Tikal Fuzeday - Don't expect something to work
+                  </div>
+              </footer>
+          </main>
+      </div>
+      <script src="lib/material/material.min.js"></script>
+    <!-- <h1>Hello World!</h1>
+    We are using io.js <script>document.write(process.version)</script>
+    and Electron <script>document.write(process.versions['electron'])</script>. -->
+    <script src="app.js"></script>
+  </body>
+</html>
