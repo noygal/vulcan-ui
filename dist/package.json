@@ -1,0 +1,23 @@
+{
+  "name": "vulcan",
+  "version": "0.0.3",
+  "description": "Node build tool for npm, gulp, grunt",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noygal/vulcan-ui.git"
+  },
+  "author": "Gal Noy <gal@galnoy.com>",
+  "license": "LGPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/noygal/vulcan-ui/issues"
+  },
+  "homepage": "https://github.com/noygal/vulcan-ui/",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "lodash": "^3.9.3",
+    "ps-tree": "^1.0.0",
+    "react": "^0.13.3",
+    "reflux": "^0.2.10"
+  }
+}
