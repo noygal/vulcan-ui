@@ -19,5 +19,5 @@ switch (os.platform()) {
 }
 
 var runFile = fs.readFileSync('run.js')
-runFile.replace("var path = ''", "var path = '" + __dirname + "'")
-fs.writeFileSync('run.js', data)
+runFile = runFile.toString().replace("var path = ''", "var path = '" + __dirname + "'")
+fs.writeFileSync('run.js', runFile)
