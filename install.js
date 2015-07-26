@@ -18,6 +18,6 @@ switch (os.platform()) {
     throw 'Sorry, we are not supporting ' +  os.platform
 }
 
-var runFile = fs.readFileSync('run.js')
-runFile = runFile.toString().replace("var path = ''", "var path = '" + __dirname + "'")
-fs.writeFileSync('run.js', runFile)
+// var runFile = fs.readFileSync('run.js')
+// runFile = runFile.toString().replace("var path = ''", "var path = '" + __dirname + "'")
+// fs.writeFileSync('run.js', runFile)
