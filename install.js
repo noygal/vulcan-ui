@@ -1,5 +1,6 @@
-require('shelljs/global');
+require('shelljs/global')
 var os = require('os')
+var fs = require('fs')
 
 exec('gulp clean')
 
@@ -16,3 +17,7 @@ switch (os.platform()) {
   default:
     throw 'Sorry, we are not supporting ' +  os.platform
 }
+
+var runFile = fs.readFileSync('run.js')
+runFile.replace("var path = ''", "var path = '" + __dirname + "'")
+fs.writeFileSync('run.js', data)
