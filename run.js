@@ -7,13 +7,13 @@ var os = require('os')
 
 switch (os.platform()) {
   case 'linux':
-    exec(path + '/bin/vulcan-linux-x64/vulcan  &')
+    exec('vulcan  &', {cwd : path + '/bin/vulcan-linux-x64/'})
     break
   case 'win32':
-    exec(path + '/start bin/vulcan-win32-x64/vulcan.exe')
+    exec('start vulcan.exe', {cwd : path + '/bin/vulcan-win32-x64/')
     break
   case 'darwin':
-    exec(path + '/open bin/vulcan-darwin-x64/vulcan.app &')
+    exec('open vulcan.app &', {cwd : path + '/bin/vulcan-darwin-x64/')
     break
   default:
     throw 'Sorry, we are not supporting ' +  os.platform
