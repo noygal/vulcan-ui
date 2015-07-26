@@ -4,10 +4,10 @@
   "description": "Node build tool for npm, gulp, grunt",
   "main": "dist/main.js",
   "bin": {
-    "run": "bin.js"
+    "run": "run.js"
   },
   "scripts": {
-    "install": "node install.js",
+    "postinstall": "node install.js",
     "watch": "gulp watch",
     "build": "gulp build",
     "run": "gulp run"
