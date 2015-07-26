@@ -2,12 +2,15 @@
   "name": "vulcan-ui",
   "version": "0.0.3",
   "description": "Node build tool for npm, gulp, grunt",
-  "main": "dist/main.js",
+  "main": "run.js",
   "scripts": {
+    "install": "node install.js",
     "watch": "gulp watch",
     "build": "gulp build",
     "run": "gulp run"
   },
+  "os" : [ "darwin", "linux", "win32"],
+  "cpu" : [ "x64"],
   "repository": {
     "type": "git",
     "url": "https://github.com/noygal/vulcan-ui.git"
@@ -27,7 +30,7 @@
     "url": "https://github.com/noygal/vulcan-ui/issues"
   },
   "homepage": "https://github.com/noygal/vulcan-ui/",
-  "devDependencies": {
+  "dependencies": {
     "babelify": "^6.1.2",
     "browserify": "^10.2.1",
     "del": "^1.2.0",
@@ -42,9 +45,7 @@
     "gulp-run": "^1.6.8",
     "gulp-sequence": "^0.3.2",
     "managed-bower": "^0.0.4",
-    "vinyl-source-stream": "^1.1.0"
-  },
-  "dependencies": {
+    "vinyl-source-stream": "^1.1.0",
     "jquery": "^2.1.4",
     "lodash": "^3.9.3",
     "ps-tree": "^1.0.0",

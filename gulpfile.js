@@ -37,20 +37,28 @@ var paths = {
 var watches = [];
 
 var packager = require('electron-packager')
-gulp.task('electron', function(done) {
-  packager({
-    dir : paths.dist,
-    name : require('./' + paths.dist + 'package.json').name,
-    platform : 'all',
-    arch : 'x64',
-    version : '0.30.0',
-    out : paths.bin,
-    overwrite : true
-  }, function(error, appPath){
-    // console.log(appPath)
-    done(error)
+function createElectronTask(platform) {
+  gulp.task('electron:' + platform, function(done) {
+    packager({
+      dir : paths.dist,
+      name : require('./' + paths.dist + 'package.json').name,
+      platform : platform,
+      arch : 'x64',
+      version : '0.30.0',
+      out : paths.bin,
+      overwrite : true
+    }, function(error, appPath){
+      // console.log(appPath)
+      done(error)
+    })
   })
-})
+}
+
+createElectronTask('linux')
+createElectronTask('darwin')
+createElectronTask('win32')
+
+gulp.task('electron', gulpSequence('electron:linux', 'electron:darwin', 'electron:win32'))
 
 function createGulpTask(taskName, options) {
   watches.push({
