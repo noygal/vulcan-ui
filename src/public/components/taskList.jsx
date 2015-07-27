@@ -45,7 +45,7 @@ export class taskList extends React.Component {
     }
 
     handleClick(item){
-        eventsDispatcher.runTask(item);
+        eventsDispatcher.runTask.triggerAsync(item);
     }
     render() {
        $("#mainSpinner").hide();
