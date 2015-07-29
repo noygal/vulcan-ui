@@ -14,10 +14,26 @@
   },
   "homepage": "https://github.com/noygal/vulcan-ui/",
   "dependencies": {
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.1",
+    "del": "^1.2.0",
+    "electron-packager": "^5.0.1",
+    "electron-prebuilt": "^0.30.0",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0",
+    "gulp-bower": "0.0.10",
+    "gulp-less": "^3.0.3",
+    "gulp-mocha": "^2.1.0",
+    "gulp-nodemon": "^2.0.3",
+    "gulp-run": "^1.6.8",
+    "gulp-sequence": "^0.3.2",
     "jquery": "^2.1.4",
     "lodash": "^3.9.3",
+    "managed-bower": "^0.0.4",
     "ps-tree": "^1.0.0",
     "react": "^0.13.3",
-    "reflux": "^0.2.10"
+    "reflux": "^0.2.10",
+    "shelljs": "^0.5.1",
+    "vinyl-source-stream": "^1.1.0"
   }
 }

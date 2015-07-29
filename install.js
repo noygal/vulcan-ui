@@ -3,6 +3,7 @@ var os = require('os')
 var fs = require('fs')
 
 exec('gulp clean')
+exec('gulp build')
 
 switch (os.platform()) {
   case 'linux':
