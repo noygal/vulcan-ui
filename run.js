@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-// var path = ''
-
 require('shelljs/global')
 var os = require('os')
 
@@ -13,7 +11,7 @@ switch (os.platform()) {
     // launchApp('vulcan  &', 'bin/vulcan-linux-x64/')
     break
   case 'win32':
-    exec('start bin/vulcan-win32-x64/vulcan.exe')
+    exec('start ' + path + '/bin/vulcan-win32-x64/vulcan.exe')
     // launchApp('start vulcan.exe', 'bin/vulcan-win32-x64/')
     break
   case 'darwin':
@@ -24,8 +22,8 @@ switch (os.platform()) {
     throw 'Sorry, we are not supporting ' +  os.platform
 }
 
-function launchApp(cmd, path) {
-  // var sep = os.platform() === 'win32' ? ' && ' : ' ; '
-  // exec('cd ' + path + sep + cmd + sep + 'cd ' + cwd)
-  exec()
-}
+// function launchApp(cmd, path) {
+//   // var sep = os.platform() === 'win32' ? ' && ' : ' ; '
+//   // exec('cd ' + path + sep + cmd + sep + 'cd ' + cwd)
+//   exec()
+// }
