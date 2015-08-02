@@ -7,7 +7,7 @@ var path = __dirname
 
 switch (os.platform()) {
   case 'linux':
-    exec('bin/vulcan-linux-x64/vulcan  &')
+    exec(path + '/bin/vulcan-linux-x64/vulcan  &')
     // launchApp('vulcan  &', 'bin/vulcan-linux-x64/')
     break
   case 'win32':
