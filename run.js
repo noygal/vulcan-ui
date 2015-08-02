@@ -15,7 +15,7 @@ switch (os.platform()) {
     // launchApp('start vulcan.exe', 'bin/vulcan-win32-x64/')
     break
   case 'darwin':
-    exec('open bin/vulcan-darwin-x64/vulcan.app')
+    exec('open ' + path + '/bin/vulcan-darwin-x64/vulcan.app')
     // launchApp('open vulcan.app &', 'bin/vulcan-darwin-x64/')
     break
   default:
