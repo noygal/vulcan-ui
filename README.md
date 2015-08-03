@@ -42,9 +42,9 @@ The binaries should be in the ```bin``` folder.
 
 ## Acknowledgments
 
-This project is the child of [Tikal's](http://www.tikalk.com/) 16 fuse day contest, the original team members are:
+This project is the child of [Tikal](http://www.tikalk.com/) 16th fuse day contest, the original team members are:
 - [matanwerbner](http://github.com/matanwerbner)
 - [chertkovalex](http://github.com/chertkovalex)
 - [GabiAxel](http://github.com/GabiAxel)
 - [zivr](http://github.com/zivr)
-- [noygal](http://github.com/noygal) 
+- [noygal](http://github.com/noygal)
