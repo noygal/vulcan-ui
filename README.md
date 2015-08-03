@@ -1,6 +1,7 @@
-# playground-base
+# vulcan-ui
 
-ReactJS CollapsibleSection demo;
+![](https://raw.githubusercontent.com/noygal/vulcan-ui/master/docs/vulcan.gif)
+
 
 ####TL;DR
 Execute to fire up project build and watch:
@@ -14,8 +15,6 @@ To launch electron app
 gulp run
 ```
 You MUST install electron and to set the path in the `run` task on the 'gulpfile.js'.
-
-CollapsibleSection component can be found [here](https://github.com/noygal/playground-base/blob/react/src/public/module/CollapsibleSection.jsx)
 
 ### General  
 
