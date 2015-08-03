@@ -51,7 +51,6 @@
     "gulp-less": "^3.0.3",
     "gulp-mocha": "^2.1.0",
     "gulp-nodemon": "^2.0.3",
-    "gulp-run": "^1.6.8",
     "gulp-sequence": "^0.3.2",
     "jquery": "^2.1.4",
     "lodash": "^3.9.3",

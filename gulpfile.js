@@ -1,14 +1,6 @@
 var gulp = require('gulp');
 var gulpSequence = require('gulp-sequence');
-// require = require('managed-require');
-// require.config({
-//   npmLoad: {
-//      loglevel: 'verbose',
-//      save-dev : true
-//   }
-// });
 var mocha = require('gulp-mocha');
-var bower = require('gulp-bower');
 var del = require('del');
 var less = require('gulp-less');
 var babel = require('gulp-babel');
@@ -147,12 +139,9 @@ gulp.task('clean:all', function (cb) {
     'node_modules'
   ], cb);
 });
-var run = require('gulp-run');
 // Use gulp-run to start a pipeline
 gulp.task('run', function () {
   var p = proc.spawn(electron,['dist/main.js']);
-
- // run('/opt/homebrew-cask/Caskroom/electron/0.29.2/Electron.app/Contents/MacOS/Electron . &').exec();
 });
 gulp.task('runAndBuild', gulpSequence('build', 'run'));
 
