@@ -2,55 +2,49 @@
 
 ![](https://raw.githubusercontent.com/noygal/vulcan-ui/master/docs/vulcan.gif)
 
+## Installation
 
-####TL;DR
-Execute to fire up project build and watch:
+You can install vulcan-ui with npm, gulp is needed for the build process.
 ```
+npm install -g gulp
+npm install -g vulcan-ui
+```
+
+If your npm require root privileges to install global packages then you can either [fix your npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions), or you can use the ```usafe-perm``` flag.
+```
+sudo npm install -g --unsafe-perm vulcan-ui
+```
+
+Now you can lunch the vulcan application from the terminal.
+```
+vulcan
+```
+
+## Build
+
+If you're having problems with the installation process, or you prefer to get the get hold of the binaries, you can build the application on your local machine.
+
+#### Clone/fork this repository
+```
+git clone https://github.com/noygal/vulcan-ui.git
+```
+#### Install dependencies
+```
+npm install -g gulp
 npm install
-gulp
+```
+#### Build vulcan-ui
+```
+gulp bin
 ```
 
-To launch electron app
-```
-gulp run
-```
-You MUST install electron and to set the path in the `run` task on the 'gulpfile.js'.
+The binaries should be in the ```bin``` folder.
 
-### General  
+## Acknowledgments
 
-This is a fully automated project, all the source files reside under the 'src/' folder, running the build process compile/preprocess/generate the distribution files to the 'dist/' folder.
-
-### Automation
-
-Automation is done with [gulp](http://gulpjs.com/), in order to initialize the project run:
-
-```
-npm install
-```
-
-Then just run:
-```
-gulp
-```
-To invoke build, serve and watch tasks for the project.The watch task will invoke the proper build sub task for every source file change, the serve task relaunch the server upon files changes.
-
-TODO - add livereload, add test to dev life cycle
-
-More gulp tasks:
-```
-gulp test
-gulp clean
-```
-
-Review  [gulpfile.js](https://github.com/noygal/playground-base/blob/master/gulpfile.js) for more details.
-
-
-### Project stack&layout
-
-We use [babel](https://babeljs.io/) to compile es6 to es5, every .js file under the 'src/' folder is pipe to 'dist/' folder.
-
-1. Server - 'src/server.js' is the server start point.
-2. Client - 'src/public/app.js' get browserify.
-3. Shared - all the code placed under 'src/public/' folder should be accessible to both the client and the server.
-
-All *.spec.js files are piped to mocha, there is no client/e2e tests, but you can still use mocha to test client js code, just make sure there's no external dependecies in the code (or inject those), taking TDD approach would most likely produce easy solutions for that.
+This project is the child of [Tikal's](http://www.tikalk.com/) 16 fuse day contest, the original team members are:
+- [matanwerbner](http://github.com/matanwerbner)
+- [chertkovalex](http://github.com/chertkovalex)
+- [GabiAxel](http://github.com/GabiAxel)
+- [zivr](http://github.com/zivr)
+- [noygal](http://github.com/noygal) 
