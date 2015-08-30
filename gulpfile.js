@@ -160,6 +160,7 @@ gulp.task('build', ['build:js', 'build:html', 'build:less', 'build:jsPublic']);
 gulp.task('test', gulpSequence('build:js', 'test:js'));
 
 gulp.task('watch', function() {
+  gulp.start('build');
   watches.forEach(function(watch) {
     gulp.watch(watch.src, [watch.task]);
   });
